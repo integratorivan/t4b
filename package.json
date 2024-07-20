@@ -1,0 +1,52 @@
+{
+  "name": "t4b",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "eslint:check": "eslint --ext .jsx,.js,.ts,.tsx src/",
+    "eslint:fix": "eslint --ext .jsx,.js,.ts,.tsx src/ --fix",
+    "ts:check": "yarn tsc --noEmit",
+    "stylelint:check": "stylelint \"src/**/*.scss\"",
+    "stylelint:fix": "stylelint \"src/**/*.scss\" --fix"
+  },
+  "dependencies": {
+    "react": "^18",
+    "react-dom": "^18",
+    "next": "14.2.5"
+  },
+  "devDependencies": {
+    "typescript": "5.5.3",
+    "@types/node": "20.14.11",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "@typescript-eslint/eslint-plugin": "7.16.1",
+    "@typescript-eslint/parser": "7.16.1",
+    "eslint": "8.57.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-airbnb-typescript": "18.0.0",
+    "eslint-config-next": "14.2.1",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-jsx-a11y": "6.8.0",
+    "eslint-plugin-prettier": "5.1.3",
+    "eslint-plugin-react": "7.34.1",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-simple-import-sort": "12.0.0",
+    "eslint-plugin-sort-keys-fix": "1.1.2",
+    "eslint-plugin-testing-library": "6.2.0",
+    "eslint-plugin-typescript-sort-keys": "3.2.0",
+    "prettier": "3.2.5",
+    "eslint-plugin-unused-imports": "3.1.0",
+    "stylelint": "15.11.0",
+    "stylelint-csstree-validator": "3.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "2.8.0",
+    "stylelint-no-browser-hacks": "1.3.0",
+    "stylelint-order": "6.0.4",
+    "stylelint-z-index-value-constraint": "1.4.0",
+    "@greenly/stylelint-config-rational-order": "0.2.1"
+  }
+}

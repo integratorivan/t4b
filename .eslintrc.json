@@ -1,0 +1,89 @@
+{
+  "extends": [
+    "airbnb-base",
+    "next/core-web-vitals",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "endOfLine": "auto"
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["**/*.ts", "**/*.tsx"],
+      "plugins": [
+        "@typescript-eslint",
+        "unused-imports",
+        "simple-import-sort",
+        "typescript-sort-keys",
+        "sort-keys-fix"
+      ],
+      "extends": [
+        "airbnb",
+        "airbnb-typescript",
+        "next/core-web-vitals",
+        "plugin:prettier/recommended"
+      ],
+      "parserOptions": {
+        "project": "**/tsconfig.json"
+      },
+      "rules": {
+        "prettier/prettier": [
+          "error",
+          {
+            "singleQuote": true,
+            "endOfLine": "auto"
+          }
+        ],
+        "jsx-a11y/control-has-associated-label": "off",
+        "typescript-sort-keys/interface": [1, "asc", { "caseSensitive": true, "natural": true, "requiredFirst": true }],
+        "typescript-sort-keys/string-enum": [1, "asc", { "caseSensitive": true, "natural": true }],
+        "import/extensions": "off",
+        "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+        "react/no-array-index-key": 1,
+        "react/function-component-definition": "off",
+        "react/destructuring-assignment": "off",
+        "react/require-default-props": "off",
+        "react/jsx-no-useless-fragment": [2, { "allowExpressions": true }],
+        "@typescript-eslint/no-explicit-any": "error",
+        "react/jsx-props-no-spreading": "off",
+        "@typescript-eslint/comma-dangle": "off",
+        "@typescript-eslint/consistent-type-imports": "error",
+        "no-restricted-syntax": [
+          "error",
+          "ForInStatement",
+          "LabeledStatement",
+          "WithStatement"
+        ],
+        "import/prefer-default-export": "off",
+        "@typescript-eslint/no-unused-vars": "off",
+        "unused-imports/no-unused-imports": "error",
+        "simple-import-sort/imports": [
+          2,
+          {
+            "groups": [
+              // Group 1: "react" and libraries (node_modules)
+              ["^react", "^@?\\w"],
+              // Group 2: absolute imports with specific folders with types
+              ["^\\$/(app|pages|widgets|entities|shared|providers|api|public|store|features)"],
+              ["^\\$\\w*\\u002F.*\\.(ts|tsx)$", "^\\$\\w*\\u002F.*\\.(js|jsx)$"],
+              // Group 3: relative imports (modules and other local imports except css module)
+              ["^\\./[^\\.]+"],
+              // Group 4: importing .scss or any other style, in last position
+              [".+\\.(css|scss|sass|less)$"]
+            ]
+          }
+        ],
+        "unused-imports/no-unused-vars": [
+          "error",
+          { "argsIgnorePattern": "^_" }
+        ]
+      }
+    }
+  ]
+}
