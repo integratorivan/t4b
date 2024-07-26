@@ -67,14 +67,10 @@
           2,
           {
             "groups": [
-              // Group 1: "react" and libraries (node_modules)
               ["^react", "^@?\\w"],
-              // Group 2: absolute imports with specific folders with types
               ["^\\$/(app|pages|widgets|entities|shared|providers|api|public|store|features)"],
               ["^\\$\\w*\\u002F.*\\.(ts|tsx)$", "^\\$\\w*\\u002F.*\\.(js|jsx)$"],
-              // Group 3: relative imports (modules and other local imports except css module)
               ["^\\./[^\\.]+"],
-              // Group 4: importing .scss or any other style, in last position
               [".+\\.(css|scss|sass|less)$"]
             ]
           }

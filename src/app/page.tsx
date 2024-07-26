@@ -1,15 +1,39 @@
+'use client';
+
+import { atom } from '@reatom/core';
+import { reatomAsync } from '@reatom/framework';
+import { reatomComponent } from '@reatom/npm-react';
 import Image from 'next/image';
+
+import { Button } from './comp';
+import { userAtom } from './model/user';
 
 import styles from './page.module.css';
 
-export default function Home() {
+export const atoms = atom(1, 'atoms');
+export const atomTitle = atom('123', 'atomTitle');
+
+export const getData = reatomAsync((ctx) => {
+    const id = Math.floor(Math.random() * 199) + 1;
+
+    return ctx.schedule(async () => {
+        const data = await fetch(`https://jsonplaceholder.typicode.com/todos/${id}`).then((res) =>
+            res.json(),
+        );
+        userAtom(ctx, data);
+    });
+});
+
+const Home = reatomComponent(({ ctx }) => {
+    ctx.spy(getData);
+
     return (
         <main className={styles.main}>
             <div className={styles.description}>
-                <p>
-                    Get started by editing&nbsp;
-                    <code className={styles.code}>src/app/page.tsx</code>
-                </p>
+                <p>{ctx.spy(userAtom)?.title}</p>
+                <h1>{ctx.spy(userAtom)?.id}</h1>
+                <button onClick={() => getData(ctx)}>Click</button>
+                <Button />
                 <div>
                     <a
                         href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
@@ -91,4 +115,6 @@ export default function Home() {
             </div>
         </main>
     );
-}
+});
+
+export default Home;
