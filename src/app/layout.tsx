@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Lato } from 'next/font/google';
 
 import './variables.css';
+import { Reatom } from './abs';
 import './globals.css';
 
 const lato = Lato({
@@ -14,14 +15,19 @@ export const metadata: Metadata = {
     description: 'Ставки на стримеров.',
 };
 
-export default function RootLayout({
+export default async function RootLayout({
     children,
 }: Readonly<{
     children: React.ReactNode;
 }>) {
+    const data = await (await fetch('https://jsonplaceholder.typicode.com/todos/1')).json();
+
     return (
         <html lang="en">
-            <body className={lato.className}>{children}</body>
+            <body className={lato.className}>
+                <h1>Layoyt</h1>
+                <Reatom params={data}>{children}</Reatom>
+            </body>
         </html>
     );
 }
