@@ -1,120 +1,58 @@
-'use client';
-
-import { atom } from '@reatom/core';
-import { reatomAsync } from '@reatom/framework';
-import { reatomComponent } from '@reatom/npm-react';
-import Image from 'next/image';
-
-import { Button } from './comp';
-import { userAtom } from './model/user';
-
 import styles from './page.module.css';
 
-export const atoms = atom(1, 'atoms');
-export const atomTitle = atom('123', 'atomTitle');
+const Header = () => {
+    return (
+        <header className={styles.header}>
+            <div className={styles.headerWrapper}>
+                <div className={styles.logoContainer}>
+                    <h2 className={styles.logo}>T4B</h2>
+                    <div>
+                        <p className={styles.description}>Ставки на каналы </p>
+                        <p className={styles.description}>в прямом эфире</p>
+                    </div>
+                </div>
+                <div className={styles.tabs}>
+                    <button type="button">Главная</button>
+                    <button type="button">Каналы</button>
+                    <button type="button">События</button>
+                </div>
+                <div />
+            </div>
+            <div className={styles.title}>
+                <div className={styles.titleWrapper}>
+                    <div className={styles.titleTextContainer}>
+                        <span className={styles.titleText}>Ставки</span>
+                        <svg
+                            className={styles.titleBackground}
+                            width="501"
+                            height="126"
+                            viewBox="0 0 501 126"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M22 78.8561C30.9171 78.0515 108.198 43.6546 145.724 26.5567L92.7782 104L266.105 26.5567C243.069 52.3711 201.456 104 201.456 104C201.456 104 292.856 52.3711 336.327 26.5567C318.864 48.6834 289.593 104 289.593 104C289.593 104 382.027 46.8087 426.612 22L383.141 104L479 41.6431"
+                                stroke="#C2EA6D"
+                                stroke-width="43"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </div>
+                    на каналы
+                </div>
+                <div className={styles.purpleTitle}>стримеров : блогеров</div>
+            </div>
+        </header>
+    );
+};
 
-export const getData = reatomAsync((ctx) => {
-    const id = Math.floor(Math.random() * 199) + 1;
-
-    return ctx.schedule(async () => {
-        const data = await fetch(`https://jsonplaceholder.typicode.com/todos/${id}`).then((res) =>
-            res.json(),
-        );
-        userAtom(ctx, data);
-    });
-});
-
-const Home = reatomComponent(({ ctx }) => {
-    ctx.spy(getData);
-
+const Home = () => {
     return (
         <main className={styles.main}>
-            <div className={styles.description}>
-                <p>{ctx.spy(userAtom)?.title}</p>
-                <h1>{ctx.spy(userAtom)?.id}</h1>
-                <button onClick={() => getData(ctx)}>Click</button>
-                <Button />
-                <div>
-                    <a
-                        href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        By{' '}
-                        <Image
-                            src="/vercel.svg"
-                            alt="Vercel Logo"
-                            className={styles.vercelLogo}
-                            width={100}
-                            height={24}
-                            priority
-                        />
-                    </a>
-                </div>
-            </div>
-
-            <div className={styles.center}>
-                <Image
-                    className={styles.logo}
-                    src="/next.svg"
-                    alt="Next.js Logo"
-                    width={180}
-                    height={37}
-                    priority
-                />
-            </div>
-
-            <div className={styles.grid}>
-                <a
-                    href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-                    className={styles.card}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <h2>
-                        Docs <span>-&gt;</span>
-                    </h2>
-                    <p>Find in-depth information about Next.js features and API.</p>
-                </a>
-
-                <a
-                    href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-                    className={styles.card}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <h2>
-                        Learn <span>-&gt;</span>
-                    </h2>
-                    <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-                </a>
-
-                <a
-                    href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-                    className={styles.card}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <h2>
-                        Templates <span>-&gt;</span>
-                    </h2>
-                    <p>Explore starter templates for Next.js.</p>
-                </a>
-
-                <a
-                    href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-                    className={styles.card}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <h2>
-                        Deploy <span>-&gt;</span>
-                    </h2>
-                    <p>Instantly deploy your Next.js site to a shareable URL with Vercel.</p>
-                </a>
-            </div>
+            <Header />
         </main>
     );
-});
+};
 
 export default Home;
