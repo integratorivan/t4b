@@ -41,6 +41,8 @@
           }
         ],
         "jsx-a11y/control-has-associated-label": "off",
+        "jsx-a11y/no-static-element-interactions": "off",
+        "jsx-a11y/click-events-have-key-events": "off",
         "typescript-sort-keys/interface": [1, "asc", { "caseSensitive": true, "natural": true, "requiredFirst": true }],
         "typescript-sort-keys/string-enum": [1, "asc", { "caseSensitive": true, "natural": true }],
         "import/extensions": "off",
