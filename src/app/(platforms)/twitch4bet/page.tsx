@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 
-import { Streamers } from '$/app/(widgets)/streamers';
+import { Streamers } from '$/app/(core)/streamers';
 
 import { Header } from './parts/header';
 import { Tabs } from './parts/tabs';
