@@ -1,5 +1,7 @@
 :root {
     --t4b-bg :#EFEEF2;
-    --t4b-black: #403955;
+    --t4b-stroke: #D9D9D9;
+    --t4b-white: #FFF;
+    --t4b-black: #403954;
     --t4b-main-purple: #7B52EE;
 }
