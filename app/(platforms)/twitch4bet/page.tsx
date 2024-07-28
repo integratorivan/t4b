@@ -1,15 +1,11 @@
 import type { Metadata } from 'next';
 
-import { Streamers } from '$/app/(core)/streamers';
+import { Streamers } from '$/app/(modules)/streamers';
 
 import { Header } from './parts/header';
 import { Tabs } from './parts/tabs';
 
 import styles from './styles.module.css';
-
-export const Footer = () => {
-    return <div>Footer</div>;
-};
 
 export const metadata: Metadata = {
     title: 'Twitch4Bet',
@@ -57,7 +53,6 @@ const Main = () => {
             </div>
             <Tabs />
             <Streamers streamers={streamersMock} />
-            <Footer />
         </main>
     );
 };

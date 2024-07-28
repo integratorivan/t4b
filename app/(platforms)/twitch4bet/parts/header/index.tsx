@@ -1,4 +1,4 @@
-import { BackgroundPatterIcon } from '$/shared/icons';
+import { BackgroundPatterIcon } from '$/app/(shared)/icons';
 
 import styles from './styles.module.css';
 

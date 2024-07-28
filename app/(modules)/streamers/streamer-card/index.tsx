@@ -6,7 +6,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { InfoIcon, QrCodeIcon, TelegramIcon, YoutubeIcon } from '$/shared/icons';
+import { InfoIcon, QrCodeIcon, TelegramIcon, YoutubeIcon } from '$/app/(shared)/icons';
 
 import styles from './styles.module.css';
 
