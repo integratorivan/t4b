@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 
 import { Streamers } from '$/app/(modules)/streamers';
+import { Tournaments } from '$/app/(modules)/tournaments';
 
 import { Header } from './parts/header';
 import { Tabs } from './parts/tabs';
@@ -53,6 +54,9 @@ const Main = () => {
             </div>
             <Tabs />
             <Streamers streamers={streamersMock} />
+            <div className={styles.divider} />
+            <Tournaments />
+            <h1>События</h1>
         </main>
     );
 };

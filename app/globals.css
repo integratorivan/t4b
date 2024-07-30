@@ -10,7 +10,8 @@ body {
   max-height: 100svh;
 
   background-color: var(--t4b-bg);
-  opacity: 0;
+
+  /* opacity: 0; */
 }
 
 a {
