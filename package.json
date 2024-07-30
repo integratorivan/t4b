@@ -14,6 +14,7 @@
     "stylelint:fix": "stylelint \"src/**/*.scss\" --fix"
   },
   "dependencies": {
+    "@microsoft/signalr": "^8.0.7",
     "@reatom/core": "3.9.0",
     "@reatom/framework": "3.4.48",
     "@reatom/npm-react": "3.8.10",
