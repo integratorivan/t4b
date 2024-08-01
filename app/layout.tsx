@@ -4,6 +4,9 @@ import { Inter } from 'next/font/google';
 import './variables.css';
 import './globals.css';
 
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+
 // TODO: разобраться с локальными шрифтами. Пока не смог подтянуть
 // const lato = localFont({
 //     src: [

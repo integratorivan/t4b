@@ -18,3 +18,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+
+.swiper-slide {
+  /* они уебаны, я не перебью иначе */
+  width: fit-content !important;
+}

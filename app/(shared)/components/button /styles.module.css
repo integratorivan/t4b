@@ -1,0 +1,24 @@
+.button {
+    color: var(--t4b-black);
+    font-weight: 600;
+    font-size: 16px;
+
+    border-radius: 8px;
+}
+
+.button[data-size="md"] {
+    height: 40px;
+    padding: 10px 16px;
+
+}
+
+.button[data-variant="transparent"] {
+    background-color: transparent;
+    border: 1px solid #9793A3;
+
+    &:hover {
+        background-color: #FFF;
+        cursor: pointer;
+    }
+
+}
