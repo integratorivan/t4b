@@ -2,6 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+  font-family: var(--font-lato);
 }
 
 html,
@@ -9,9 +11,10 @@ body {
   max-width: 100svw;
   max-height: 100svh;
 
+  color: var(--t4b-black);
+
   background-color: var(--t4b-bg);
 
-  /* opacity: 0; */
 }
 
 a {

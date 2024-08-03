@@ -14,7 +14,7 @@
     padding: 10px 16px;
 
     color: var(--t4b-black);
-    font-weight: 500;
+    font-weight: var(--t4b-semibold);
     font-size: 16px;
     line-height: 19px;
     text-align: center;

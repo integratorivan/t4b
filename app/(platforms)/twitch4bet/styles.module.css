@@ -10,7 +10,7 @@
   padding-bottom: 15px;
   padding-left: 20px;
 
-  font-weight: 500;
+  font-weight: var(--t4b-semibold);
   font-size: 16px;
   line-height: 19px;
 
@@ -45,7 +45,7 @@
 
 .title {
   color: var(--t4b-black);
-  font-weight: 500;
+  font-weight: var(--t4b-medium);
   font-size: 36px;
   font-style: normal;
   line-height: 43px;

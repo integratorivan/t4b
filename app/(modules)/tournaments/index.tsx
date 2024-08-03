@@ -7,9 +7,7 @@ export const Tournaments = () => (
         {Array.from({ length: 8 }).map((_, index) => (
             <TournamentCard
                 key={index}
-                {...{
-                    title: `Tournament sdakfmdsajklfn asjn ksdnafj  ${index}`,
-                }}
+                title={`Tournament sdakfmdsajklfn asjn ksdnafj  ${index}`}
             />
         ))}
     </div>

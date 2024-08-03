@@ -8,6 +8,8 @@
     padding: 12px;
 
     color: #fff;
+    font-weight: var(--t4b-semibold);
+    font-size: 18px;
     word-wrap: break-word;
 
     background-color: var(--t4b-main-purple);

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description: 'Ставки на стримеров.',
 };
 
-export const streamersMock = [
+const streamersMock = [
     {
         title: 'betboom_cs_b',
         description:
@@ -60,7 +60,7 @@ const Main = () => {
             <Streamers streamers={streamersMock} />
             <div className={styles.divider} />
             <Tournaments />
-            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 80 }}>
                 <h1 className={styles.title}>События</h1>
                 <Button size="md" variant="transparent">
                     Смотреть больше

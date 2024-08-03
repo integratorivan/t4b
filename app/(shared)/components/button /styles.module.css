@@ -1,6 +1,6 @@
 .button {
     color: var(--t4b-black);
-    font-weight: 600;
+    font-weight: var(--t4b-semibold);
     font-size: 16px;
 
     border-radius: 8px;

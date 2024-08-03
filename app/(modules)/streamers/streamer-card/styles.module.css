@@ -19,7 +19,7 @@
     margin-bottom: 8px;
 
     color: var(--t4b-black);
-    font-weight: 600;
+    font-weight: var(--t4b-semibold);
     font-size: 18px;
     line-height: 22px;
 }
@@ -32,7 +32,7 @@
     overflow: hidden;
 
     color: var(--t4b-black);
-    font-weight: 500;
+    font-weight: var(--t4b-medium);
     font-size: 15px;
     line-height: 18px;
     text-overflow: ellipsis;

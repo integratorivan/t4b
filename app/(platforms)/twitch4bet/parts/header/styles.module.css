@@ -17,13 +17,13 @@
   .logo {
     display: flex;
   
-    font-weight: 800;
+    font-weight: var(--t4b-extrabold);
     font-size: 32px;
     line-height: 38px;
   }
   
   .description {
-    font-weight: 500;
+    font-weight: var(--t4b-medium);
     font-size: 12px;
     line-height: 12px;
   }
@@ -43,12 +43,12 @@
     padding-bottom: 80px;
   
     color: var(--t4b-black);
-    font-weight: 600;
+    font-weight: var(--t4b-extrabold);
     font-size: 7em;
     line-height: 103px;
     text-transform: uppercase;
   }
-  
+
   /* TODO: переделать ??? */
   
   @media (width <= 1390px) {
