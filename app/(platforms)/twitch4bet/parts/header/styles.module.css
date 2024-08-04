@@ -59,6 +59,7 @@
   @media (width <= 1293px) {
     .title {
       font-size: 5rem;
+      line-height: 5rem;
     }
   }
   @media (width <= 1090px) {
@@ -74,6 +75,7 @@
   @media (width <= 889px) {
     .title {
       font-size: 3rem;
+      line-height: 3rem;
     }
   }
   @media (width <= 687px) {

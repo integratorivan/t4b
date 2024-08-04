@@ -49,8 +49,7 @@ const streamersMock = [
 
 const Twitch4bet = () => {
     return (
-        <main className={styles.main}>
-            <Header />
+        <div className={styles.main}>
             <div className={styles.inputWrapper}>
                 <input placeholder="Search /" className={styles.input} />
             </div>
@@ -71,7 +70,7 @@ const Twitch4bet = () => {
                 </Button>
             </div>
             <Events />
-        </main>
+        </div>
     );
 };
 
