@@ -1,0 +1,12 @@
+:root {
+    --t4b-regular: 400;
+    --t4b-medium: 500;
+    --t4b-semibold: 600;
+    --t4b-bold: 700;
+    --t4b-extrabold: 800;
+    --t4b-bg :#EFEEF2;
+    --t4b-stroke: #D9D9D9;
+    --t4b-white: #FFF;
+    --t4b-black: #403954;
+    --t4b-main-purple: #7B52EE;
+}

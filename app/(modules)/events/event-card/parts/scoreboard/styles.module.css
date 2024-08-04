@@ -1,0 +1,80 @@
+.scoreMaps {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 20px;
+
+    font-weight: var(--t4b-regular);
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.scoreMapsContainer {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    max-width: fit-content;
+    padding: 8px 12px;
+
+    background-color: transparent;
+    border: 1px solid var(--t4b-stroke);
+    border-radius: 8px;
+}
+
+.scoreContainer {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+/* scoreboard */
+.scoreboard {
+    display: flex;
+    gap: 4px;
+    align-items: flex-end;
+    justify-content: center;
+    padding-top: 16px;
+}
+
+.teamName {
+    width: 100%;
+    overflow: hidden;
+
+    font-weight: var(--t4b-regular);
+    white-space: nowrap;
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+.logoCircle {
+    width: 60px;
+    height: 60px;
+
+    background-color: var(--t4b-main-purple);
+    border-radius: 8px;
+}
+
+.teamContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    width: 105px;
+
+    font-weight: var(--t4b-regular);
+}
+
+.scoreboardContainer {
+    display: flex;
+    gap: 8px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    color: var(--t4b-black);
+    font-weight: var(--t4b-semibold);
+    font-size: 24px;
+    line-height: 29px;
+}
+

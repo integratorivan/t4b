@@ -1,0 +1,26 @@
+.eventButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 16px;
+
+        background-color: var(--t4b-white);
+        border-radius: 8px;
+}
+
+.eventButtonIcon {
+    width: 24px;
+    height: 24px;
+
+    background-color: var(--t4b-black);
+    border-radius: 50%;
+}
+
+.eventButtonText {
+    margin-left: 8px;
+
+    color: var(--t4b-black);
+    font-weight: var(--t4b-semibold);
+    font-size: 16px;
+    line-height: 19px;
+}

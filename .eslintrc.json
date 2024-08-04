@@ -40,7 +40,10 @@
             "endOfLine": "auto"
           }
         ],
+        "react/button-has-type": "off",
         "jsx-a11y/control-has-associated-label": "off",
+        "jsx-a11y/no-static-element-interactions": "off",
+        "jsx-a11y/click-events-have-key-events": "off",
         "typescript-sort-keys/interface": [1, "asc", { "caseSensitive": true, "natural": true, "requiredFirst": true }],
         "typescript-sort-keys/string-enum": [1, "asc", { "caseSensitive": true, "natural": true }],
         "import/extensions": "off",
@@ -62,7 +65,7 @@
         ],
         "import/prefer-default-export": "off",
         "@typescript-eslint/no-unused-vars": "off",
-        "unused-imports/no-unused-imports": "error",
+        "unused-imports/no-unused-imports": "off",
         "simple-import-sort/imports": [
           2,
           {
@@ -74,10 +77,6 @@
               [".+\\.(css|scss|sass|less)$"]
             ]
           }
-        ],
-        "unused-imports/no-unused-vars": [
-          "error",
-          { "argsIgnorePattern": "^_" }
         ]
       }
     }

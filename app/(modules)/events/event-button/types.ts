@@ -1,0 +1,3 @@
+type EventButtonProps = {
+    title: string;
+};

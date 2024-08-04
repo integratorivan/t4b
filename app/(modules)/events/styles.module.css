@@ -1,0 +1,12 @@
+.events {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.eventsCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin-top: 16px;
+}

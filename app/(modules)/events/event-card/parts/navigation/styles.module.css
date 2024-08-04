@@ -1,0 +1,11 @@
+.icons {
+    display: flex;
+    gap: 4px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+    border-top: 1px solid var(--t4b-stroke);
+}

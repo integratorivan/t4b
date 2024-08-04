@@ -1,0 +1,121 @@
+.headerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 12px;
+  
+    color: var(--t4b-black);
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .logo {
+    display: flex;
+  
+    font-weight: var(--t4b-extrabold);
+    font-size: 32px;
+    line-height: 38px;
+  }
+  
+  .description {
+    font-weight: var(--t4b-medium);
+    font-size: 12px;
+    line-height: 12px;
+  }
+  
+  .logoContainer {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  
+    color: var(--t4b-black);
+    font-weight: var(--t4b-extrabold);
+    font-size: 7em;
+    line-height: 103px;
+    text-transform: uppercase;
+  }
+
+  /* TODO: переделать ??? */
+  
+  @media (width <= 1390px) {
+    .title {
+      font-size: 6rem;
+    }
+  }
+  @media (width <= 1293px) {
+    .title {
+      font-size: 5rem;
+    }
+  }
+  @media (width <= 1090px) {
+    .title {
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+
+    .titleTextContainer > .titleBackground {
+        left: -20px; 
+    }
+  }
+  @media (width <= 889px) {
+    .title {
+      font-size: 3rem;
+    }
+  }
+  @media (width <= 687px) {
+    .title {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+
+    .titleTextContainer > .titleBackground {
+        left: -20px; 
+    }
+  }
+  @media (width <= 455px) {
+    .title {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .titleTextContainer {
+    position: relative;
+  }
+  
+  .titleText {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .titleWrapper {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .titleBackground {
+    position: absolute;
+    bottom: -10px;
+    left: -50px;
+    z-index: 1;
+  
+    width: 120%;
+    height: 120%;
+  }
+  
+  .purpleTitle {
+    color: var(--t4b-main-purple);
+  }

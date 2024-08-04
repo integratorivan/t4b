@@ -1,0 +1,17 @@
+.tournamentCard {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 163px;
+    height: 100%;
+    min-height: 120px;
+    padding: 12px;
+
+    color: #fff;
+    font-weight: var(--t4b-semibold);
+    font-size: 18px;
+    word-wrap: break-word;
+
+    background-color: var(--t4b-main-purple);
+    border-radius: 8px
+}
