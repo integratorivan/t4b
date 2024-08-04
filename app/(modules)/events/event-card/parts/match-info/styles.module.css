@@ -1,0 +1,47 @@
+.circle {
+    width: 24px;
+    height: 24px;
+
+    background-color: var(--t4b-main-purple);
+    border-radius: 50%;
+}
+
+.mathInfo {
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    border-bottom: 1px solid var(--t4b-stroke);
+}
+
+.matchInfoTitleContainer {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.liveBadge {
+    padding: 4px 8px;
+
+    color: var(--t4b-white);
+    font-weight: var(--t4b-semibold);
+    font-size: 12px;
+    line-height: 14px;
+
+    background-color: var(--t4b-main-purple);
+    border-radius: 8px;
+}
+
+.matchInfoTitle {
+    color: var(--t4b-black);
+    font-weight: var(--t4b-medium);
+    font-size: 18px;
+}
+
+.matchInfoTournament {
+    color: #9F9CA9;
+    font-weight: var(--t4b-medium);
+    font-size: 13px;
+    line-height: 16px;
+}
